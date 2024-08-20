@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+    min-block-size: 100vh;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+
+  .plan {
+    max-width: 425px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+
+  .plan__title {
+    font-weight: 900;
+    font-size: 3rem;
+    color: hsl(223, 47%, 23%);
+  }
+
+  .plan__subtitle {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+  }
+
+  .plan__description {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .plan__box {
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+  }
+
+  .plan__box-left {
+    gap: .5rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+
+  .plan__payment-btn {
+    display: block;
+    padding: .6em 0;
+    transition: all .3s;
+    border-radius: 12px;
+    text-decoration: none;
+    color: hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+  }
+
+  .plan__details .plan__payment-btn:hover {
+    background-color: hsl(245, 83%, 75%);
+  }
+
+  .plan__cancel {
+    padding: .01em 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: all .3s;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .plan__details .plan__cancel:hover {
+    color: #000;
+  }
+
+  .plan__details {
+    gap: 1.5rem;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan__change a {
+    font-weight: bold;
+    transition: all .3s;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .plan__change a:hover {
+    text-decoration: none;
+    color: hsl(245, 83%, 75%);
+  }
+
+  /*
+    ==============================
+    Media Quries
+    ==============================
+  */
+
+  @media (max-width: 376px) {
+    .plan {
+      max-width: 350px;
+    }
+
+    .plan__title {
+      font-size: 2.5rem;
+    }
+
+    .plan__subtitle {
+      font-size: 1rem;
+    }
+
+    .plan__price{
+      font-size: 1rem;
+    }
+
+    .plan__description {
+      font-size: 1.3rem;
+    }
+
+    .plan__box {
+      padding: .7rem;
+    }
+
+    .plan__payment-btn {
+      font-size:  1.3rem;
+      padding: 1em 0;
+    }
+
+    .plan__details .plan__payment-btn:hover {
+      background-color: hsl(245, 83%, 75%);
+    }
+
+    .plan__cancel {
+      font-size: 1.3rem;
+    }
+
+    .plan__details .plan__cancel:hover {
+      color: #000;
+    }
+
+    .plan__details {
+      gap: .5rem;
+      padding: 8%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .plan__change a {
+      font-size: 1rem;
+    }
+  }
